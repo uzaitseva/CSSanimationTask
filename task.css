@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&display=swap');
+body {
+   background-color: rgb(235, 208, 168); 
+
+}
+
+.task-heading{
+    text-align: center;
+color: rgb(45, 173, 131);
+font-family: 'Playfair Display', serif;
+font-size: 1,5rem;
+animation: header;
+animation-duration: 4s;
+position: relative; /*top-right-botton-left*/
+}
+@keyframes header{
+    0%{top:-2px;}
+    100%{top:100px;}
+    
+}
+
+.ingredients{
+    border: 1px solid black; 
+    width: 50%;
+    margin:0 auto;
+    position: relative;
+    animation: ingredients;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ingredients {
+   0% {left:-100px;} 
+85% { left: 50px;}
+100% { left: 0;}
+}
+
+.ingredients-table{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.insructions{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.insructionsol{
+border: 1px solid black;
+margin: 0 auto;
+width: 75%;
+animation: instructions ol;
+animation-duration: 5s;
+position: relative;
+text-align: right;
+}
+
+@keyframes instructionsol {
+    0% {right:-100px;} 
+ 85% { right: 50px;}
+ 100% { right: 0;}
+ }
+ 
+ .img{
+    object-fit: cover;
+    animation: img;
+   animation-duration: 4s;
+   position: relative;
+   }
+
+
+@keyframes img {
+0% {right:-100px;} 
+85% { right: 50px;}
+100% { right: 0;}
+ }
+
+.footer{
+    color: rgb(39, 85, 79);
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    }
